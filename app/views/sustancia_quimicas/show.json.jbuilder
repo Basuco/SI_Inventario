@@ -1,0 +1,1 @@
+json.extract! @sustancia_quimica, :id, :nombre, :pureza, :estado_materia, :controlado, :regimen_legal, :cantidad, :CAS, :uso, :status, :responsable, :ubicacion, :caducidad, :peligro, :created_at, :updated_at

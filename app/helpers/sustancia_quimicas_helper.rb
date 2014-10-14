@@ -1,0 +1,2 @@
+module SustanciaQuimicasHelper
+end

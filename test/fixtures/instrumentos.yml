@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  marca: MyString
+  modelo: MyString
+  unidad_medida: MyString
+  capacidad: 1.5
+  material: MyString
+  uso: MyString
+  estado: MyString
+  ubicacion: MyString
+  ultima_calibracion: 2014-10-09
+  responsable: MyString
+  no_bien_nac: 1
+
+two:
+  nombre: MyString
+  marca: MyString
+  modelo: MyString
+  unidad_medida: MyString
+  capacidad: 1.5
+  material: MyString
+  uso: MyString
+  estado: MyString
+  ubicacion: MyString
+  ultima_calibracion: 2014-10-09
+  responsable: MyString
+  no_bien_nac: 1

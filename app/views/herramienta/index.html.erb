@@ -1,0 +1,45 @@
+<h1>Listing herramienta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Marca</th>
+      <th>Tipo</th>
+      <th>No bien nac</th>
+      <th>Estado</th>
+      <th>Uso</th>
+      <th>Responsable</th>
+      <th>Ubicacion</th>
+      <th>Material</th>
+      <th>Factura</th>
+      <th>De un juego</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @herramienta.each do |herramientum| %>
+      <tr>
+        <td><%= herramientum.nombre %></td>
+        <td><%= herramientum.marca %></td>
+        <td><%= herramientum.tipo %></td>
+        <td><%= herramientum.no_bien_nac %></td>
+        <td><%= herramientum.estado %></td>
+        <td><%= herramientum.uso %></td>
+        <td><%= herramientum.responsable %></td>
+        <td><%= herramientum.ubicacion %></td>
+        <td><%= herramientum.material %></td>
+        <td><%= herramientum.factura %></td>
+        <td><%= herramientum.de_un_juego %></td>
+        <td><%= link_to 'Show', herramientum %></td>
+        <td><%= link_to 'Edit', edit_herramientum_path(herramientum) %></td>
+        <td><%= link_to 'Destroy', herramientum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Herramientum', new_herramientum_path %>

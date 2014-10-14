@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @instrumento.nombre %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @instrumento.marca %>
+</p>
+
+<p>
+  <strong>Modelo:</strong>
+  <%= @instrumento.modelo %>
+</p>
+
+<p>
+  <strong>Unidad medida:</strong>
+  <%= @instrumento.unidad_medida %>
+</p>
+
+<p>
+  <strong>Capacidad:</strong>
+  <%= @instrumento.capacidad %>
+</p>
+
+<p>
+  <strong>Material:</strong>
+  <%= @instrumento.material %>
+</p>
+
+<p>
+  <strong>Uso:</strong>
+  <%= @instrumento.uso %>
+</p>
+
+<p>
+  <strong>Estado:</strong>
+  <%= @instrumento.estado %>
+</p>
+
+<p>
+  <strong>Ubicacion:</strong>
+  <%= @instrumento.ubicacion %>
+</p>
+
+<p>
+  <strong>Ultima calibracion:</strong>
+  <%= @instrumento.ultima_calibracion %>
+</p>
+
+<p>
+  <strong>Responsable:</strong>
+  <%= @instrumento.responsable %>
+</p>
+
+<p>
+  <strong>No bien nac:</strong>
+  <%= @instrumento.no_bien_nac %>
+</p>
+
+<%= link_to 'Edit', edit_instrumento_path(@instrumento) %> |
+<%= link_to 'Back', instrumentos_path %>

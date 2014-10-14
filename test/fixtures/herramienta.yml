@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  marca: MyString
+  tipo: MyString
+  no_bien_nac: 1
+  estado: MyString
+  uso: MyString
+  responsable: MyString
+  ubicacion: MyString
+  material: MyString
+  factura: MyString
+  de_un_juego: false
+
+two:
+  nombre: MyString
+  marca: MyString
+  tipo: MyString
+  no_bien_nac: 1
+  estado: MyString
+  uso: MyString
+  responsable: MyString
+  ubicacion: MyString
+  material: MyString
+  factura: MyString
+  de_un_juego: false

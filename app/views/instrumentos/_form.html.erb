@@ -1,0 +1,65 @@
+<%= form_for(@instrumento) do |f| %>
+  <% if @instrumento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@instrumento.errors.count, "error") %> prohibited this instrumento from being saved:</h2>
+
+      <ul>
+      <% @instrumento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :marca %><br>
+    <%= f.text_field :marca %>
+  </div>
+  <div class="field">
+    <%= f.label :modelo %><br>
+    <%= f.text_field :modelo %>
+  </div>
+  <div class="field">
+    <%= f.label :unidad_medida %><br>
+    <%= f.text_field :unidad_medida %>
+  </div>
+  <div class="field">
+    <%= f.label :capacidad %><br>
+    <%= f.text_field :capacidad %>
+  </div>
+  <div class="field">
+    <%= f.label :material %><br>
+    <%= f.text_field :material %>
+  </div>
+  <div class="field">
+    <%= f.label :uso %><br>
+    <%= f.text_field :uso %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br>
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :ubicacion %><br>
+    <%= f.text_field :ubicacion %>
+  </div>
+  <div class="field">
+    <%= f.label :ultima_calibracion %><br>
+    <%= f.date_select :ultima_calibracion %>
+  </div>
+  <div class="field">
+    <%= f.label :responsable %><br>
+    <%= f.text_field :responsable %>
+  </div>
+  <div class="field">
+    <%= f.label :no_bien_nac %><br>
+    <%= f.number_field :no_bien_nac %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

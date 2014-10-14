@@ -1,0 +1,39 @@
+<h1>Listing consumibles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripcion</th>
+      <th>Dimensiones</th>
+      <th>Material</th>
+      <th>Cantidad</th>
+      <th>Ubicacion</th>
+      <th>Uso</th>
+      <th>Responsable</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @consumibles.each do |consumible| %>
+      <tr>
+        <td><%= consumible.nombre %></td>
+        <td><%= consumible.descripcion %></td>
+        <td><%= consumible.dimensiones %></td>
+        <td><%= consumible.material %></td>
+        <td><%= consumible.cantidad %></td>
+        <td><%= consumible.ubicacion %></td>
+        <td><%= consumible.uso %></td>
+        <td><%= consumible.responsable %></td>
+        <td><%= link_to 'Show', consumible %></td>
+        <td><%= link_to 'Edit', edit_consumible_path(consumible) %></td>
+        <td><%= link_to 'Destroy', consumible, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Consumible', new_consumible_path %>

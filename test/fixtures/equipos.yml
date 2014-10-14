@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  marca: MyString
+  modelo: MyString
+  serial: MyString
+  no_bien_nac: 1
+  status: MyString
+  ultima_calibracion: 2014-10-09
+  uso: MyString
+  responsable: MyString
+  ubicacion: MyString
+  fecha_adquisicion: 2014-10-09
+  orden_compra: MyString
+  costo: 1.5
+  factura: MyString
+
+two:
+  nombre: MyString
+  marca: MyString
+  modelo: MyString
+  serial: MyString
+  no_bien_nac: 1
+  status: MyString
+  ultima_calibracion: 2014-10-09
+  uso: MyString
+  responsable: MyString
+  ubicacion: MyString
+  fecha_adquisicion: 2014-10-09
+  orden_compra: MyString
+  costo: 1.5
+  factura: MyString

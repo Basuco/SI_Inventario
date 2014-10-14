@@ -1,0 +1,1 @@
+json.extract! @equipo, :id, :nombre, :marca, :modelo, :serial, :no_bien_nac, :status, :ultima_calibracion, :uso, :responsable, :ubicacion, :fecha_adquisicion, :orden_compra, :costo, :factura, :created_at, :updated_at

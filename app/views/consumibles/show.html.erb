@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @consumible.nombre %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @consumible.descripcion %>
+</p>
+
+<p>
+  <strong>Dimensiones:</strong>
+  <%= @consumible.dimensiones %>
+</p>
+
+<p>
+  <strong>Material:</strong>
+  <%= @consumible.material %>
+</p>
+
+<p>
+  <strong>Cantidad:</strong>
+  <%= @consumible.cantidad %>
+</p>
+
+<p>
+  <strong>Ubicacion:</strong>
+  <%= @consumible.ubicacion %>
+</p>
+
+<p>
+  <strong>Uso:</strong>
+  <%= @consumible.uso %>
+</p>
+
+<p>
+  <strong>Responsable:</strong>
+  <%= @consumible.responsable %>
+</p>
+
+<%= link_to 'Edit', edit_consumible_path(@consumible) %> |
+<%= link_to 'Back', consumibles_path %>

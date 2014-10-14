@@ -1,0 +1,47 @@
+<h1>Listing instrumentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Marca</th>
+      <th>Modelo</th>
+      <th>Unidad medida</th>
+      <th>Capacidad</th>
+      <th>Material</th>
+      <th>Uso</th>
+      <th>Estado</th>
+      <th>Ubicacion</th>
+      <th>Ultima calibracion</th>
+      <th>Responsable</th>
+      <th>No bien nac</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @instrumentos.each do |instrumento| %>
+      <tr>
+        <td><%= instrumento.nombre %></td>
+        <td><%= instrumento.marca %></td>
+        <td><%= instrumento.modelo %></td>
+        <td><%= instrumento.unidad_medida %></td>
+        <td><%= instrumento.capacidad %></td>
+        <td><%= instrumento.material %></td>
+        <td><%= instrumento.uso %></td>
+        <td><%= instrumento.estado %></td>
+        <td><%= instrumento.ubicacion %></td>
+        <td><%= instrumento.ultima_calibracion %></td>
+        <td><%= instrumento.responsable %></td>
+        <td><%= instrumento.no_bien_nac %></td>
+        <td><%= link_to 'Show', instrumento %></td>
+        <td><%= link_to 'Edit', edit_instrumento_path(instrumento) %></td>
+        <td><%= link_to 'Destroy', instrumento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Instrumento', new_instrumento_path %>

@@ -1,0 +1,49 @@
+<h1>Listing sustancia_quimicas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Pureza</th>
+      <th>Estado materia</th>
+      <th>Controlado</th>
+      <th>Regimen legal</th>
+      <th>Cantidad</th>
+      <th>Cas</th>
+      <th>Uso</th>
+      <th>Status</th>
+      <th>Responsable</th>
+      <th>Ubicacion</th>
+      <th>Caducidad</th>
+      <th>Peligro</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sustancia_quimicas.each do |sustancia_quimica| %>
+      <tr>
+        <td><%= sustancia_quimica.nombre %></td>
+        <td><%= sustancia_quimica.pureza %></td>
+        <td><%= sustancia_quimica.estado_materia %></td>
+        <td><%= sustancia_quimica.controlado %></td>
+        <td><%= sustancia_quimica.regimen_legal %></td>
+        <td><%= sustancia_quimica.cantidad %></td>
+        <td><%= sustancia_quimica.CAS %></td>
+        <td><%= sustancia_quimica.uso %></td>
+        <td><%= sustancia_quimica.status %></td>
+        <td><%= sustancia_quimica.responsable %></td>
+        <td><%= sustancia_quimica.ubicacion %></td>
+        <td><%= sustancia_quimica.caducidad %></td>
+        <td><%= sustancia_quimica.peligro %></td>
+        <td><%= link_to 'Show', sustancia_quimica %></td>
+        <td><%= link_to 'Edit', edit_sustancia_quimica_path(sustancia_quimica) %></td>
+        <td><%= link_to 'Destroy', sustancia_quimica, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sustancia quimica', new_sustancia_quimica_path %>
