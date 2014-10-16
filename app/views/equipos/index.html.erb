@@ -1,22 +1,22 @@
-<h1>Listing equipos</h1>
+<h1>Equipos</h1>
 
 <table>
   <thead>
     <tr>
       <th>Nombre</th>
-      <th>Marca</th>
-      <th>Modelo</th>
-      <th>Serial</th>
-      <th>No bien nac</th>
+<!--       <th>Marca</th> -->
+<!--       <th>Modelo</th> -->
+<!--       <th>Serial</th> -->
+      <th>No.Bien Nac.</th>
       <th>Status</th>
-      <th>Ultima calibracion</th>
-      <th>Uso</th>
-      <th>Responsable</th>
+<!--       <th>Ultima calibracion</th> -->
+<!--       <th>Uso</th> -->
+       <th>Responsable</th>
       <th>Ubicacion</th>
-      <th>Fecha adquisicion</th>
-      <th>Orden compra</th>
-      <th>Costo</th>
-      <th>Factura</th>
+<!--       <th>Fecha adquisicion</th> -->
+<!--       <th>Orden compra</th> -->
+<!--       <th>Costo</th> -->
+<!--       <th>Factura</th> -->
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -24,23 +24,23 @@
   <tbody>
     <% @equipos.each do |equipo| %>
       <tr>
-        <td><%= equipo.nombre %></td>
-        <td><%= equipo.marca %></td>
-        <td><%= equipo.modelo %></td>
-        <td><%= equipo.serial %></td>
-        <td><%= equipo.no_bien_nac %></td>
-        <td><%= equipo.status %></td>
-        <td><%= equipo.ultima_calibracion %></td>
-        <td><%= equipo.uso %></td>
-        <td><%= equipo.responsable %></td>
-        <td><%= equipo.ubicacion %></td>
-        <td><%= equipo.fecha_adquisicion %></td>
-        <td><%= equipo.orden_compra %></td>
-        <td><%= equipo.costo %></td>
-        <td><%= equipo.factura %></td>
-        <td><%= link_to 'Show', equipo %></td>
+        <td><pre><%= equipo.nombre %></pre></td>
+<!--         <td><%= equipo.marca %></td> -->
+<!--         <td><%= equipo.modelo %></td> -->
+<!--         <td><%= equipo.serial %></td> -->
+        <td><pre><%= equipo.no_bien_nac %></pre></td>
+        <td><pre><%= equipo.status %></pre></td>
+<!--         <td><%= equipo.ultima_calibracion %></td> -->
+<!--         <td><%= equipo.uso %></td> -->
+         <td><pre><%= equipo.responsable %></pre></td>
+        <td><pre><%= equipo.ubicacion %></pre></td>
+<!--         <td><%= equipo.fecha_adquisicion %></td> -->
+<!--         <td><%= equipo.orden_compra %></td> -->
+<!--         <td><%= equipo.costo %></td> -->
+<!--         <td><%= equipo.factura %></td> -->
+        <td><%= link_to 'Ver', equipo %></td>
         <td><%= link_to 'Edit', edit_equipo_path(equipo) %></td>
-        <td><%= link_to 'Destroy', equipo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Elim', equipo, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -48,4 +48,4 @@
 
 <br>
 
-<%= link_to 'New Equipo', new_equipo_path %>
+<%= link_to 'Nuevo Equipo', new_equipo_path %>

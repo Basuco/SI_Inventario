@@ -35,8 +35,8 @@ class EquiposController < ApplicationController
 
   def update
 	  respond_to do |format|
-      if @equipo.update(consumible_params)
-        format.html { redirect_to @equipo, notice: 'Consumible was successfully updated.' }
+      if @equipo.update(equipo_params)
+        format.html { redirect_to @equipo, notice: 'Equipo correctamente creado.' }
         format.json { render :show, status: :ok, location: @equipo }
       else
         format.html { render :edit }

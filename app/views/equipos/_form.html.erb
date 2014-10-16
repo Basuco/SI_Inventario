@@ -41,7 +41,15 @@
   </div>
   <div class="field">
     <%= f.label :uso %><br>
-    <%= f.select(:uso, [['Investigacion'], ['Docencia'], ['Extension'],['Gestion']], { :multiple => true, :size => 5 } ) %>
+    <br>
+    <%= check_box_tag 'uso_cosas[]', 'Investigacion' %>
+    <%= f.label :Investigacion %><br>
+    <%= check_box_tag 'uso_cosas[]', 'Docencia' %>
+    <%= f.label :Docencia %><br>
+    <%= check_box_tag 'uso_cosas[]', 'Extension' %>
+    <%= f.label :Extension %><br>
+    <%= check_box_tag 'uso_cosas[]', 'Gestion' %>
+    <%= f.label :Gestion %><br>
   </div>
   <div class="field">
     <%= f.label :responsable %><br>
