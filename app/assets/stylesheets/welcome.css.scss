@@ -1,3 +1,29 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+#categorias{
+	pan: 20px;
+	left : 10px;
+	font-size : 15px; 
+	line-height             : 1.8em;
+}
+
+/* Hiperlinks */
+/*
+a {
+	text-decoration         : none;
+	text-align              : right;
+	color                   : #336699;
+	font-weight             : bold;
+}
+*/
+
+/* Hiperlinks en HOVER*/
+/*
+a:hover {
+	cursor                  : pointer;
+	color                   : #8ed6ff;
+	text-align              : right;
+}
+*/
+
