@@ -7,7 +7,7 @@ class EquiposController < ApplicationController
   end
 
   def show
-    respond_with(@equipo)
+#    respond_with(@equipo)
   end
 
   def new

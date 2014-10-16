@@ -29,11 +29,11 @@
   </div>
   <div class="field">
     <%= f.label :no_bien_nac %><br>
-    <%= f.number_field :no_bien_nac %>
+    <%= f.number_field(:no_bien_nac, min: 0) %>
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+    <%= f.select(:status, [['Operativo'], ['Inoperativo'], ['Desuso'],['Reservado'] ] ) %>
   </div>
   <div class="field">
     <%= f.label :ultima_calibracion %><br>
@@ -41,7 +41,7 @@
   </div>
   <div class="field">
     <%= f.label :uso %><br>
-    <%= f.text_field :uso %>
+    <%= f.select(:uso, [['Investigacion'], ['Docencia'], ['Extension'],['Gestion']], { :multiple => true, :size => 5 } ) %>
   </div>
   <div class="field">
     <%= f.label :responsable %><br>
@@ -61,7 +61,7 @@
   </div>
   <div class="field">
     <%= f.label :costo %><br>
-    <%= f.text_field :costo %>
+    <%= f.number_field(:costo, min: 0) %>
   </div>
   <div class="field">
     <%= f.label :factura %><br>

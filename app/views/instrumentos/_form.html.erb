@@ -37,11 +37,11 @@
   </div>
   <div class="field">
     <%= f.label :uso %><br>
-    <%= f.text_field :uso %>
+    <%= f.select(:uso, options_for_select(["Investigacion", "Docencia", "Extension", "Gestion"])) %>
   </div>
   <div class="field">
     <%= f.label :estado %><br>
-    <%= f.text_field :estado %>
+    <%= f.select(:status, [['Operativo'], ['Inoperativo'], ['Desuso'],['Reservado'] ] ) %>
   </div>
   <div class="field">
     <%= f.label :ubicacion %><br>
@@ -57,7 +57,7 @@
   </div>
   <div class="field">
     <%= f.label :no_bien_nac %><br>
-    <%= f.number_field :no_bien_nac %>
+    <%= f.number_field(:no_bien_nac, min: 0) %>
   </div>
   <div class="actions">
     <%= f.submit %>

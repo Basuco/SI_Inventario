@@ -21,19 +21,19 @@
   </div>
   <div class="field">
     <%= f.label :estado_materia %><br>
-    <%= f.text_field :estado_materia %>
+    <%= f.select(:estado_materia, [['Solido'], ['Liquido'], ['Gaseoso'] ] ) %>
   </div>
   <div class="field">
     <%= f.label :controlado %><br>
-    <%= f.check_box :controlado %>
+    <%= f.select(:controlado, [['Si'], ['No']] ) %>
   </div>
   <div class="field">
     <%= f.label :regimen_legal %><br>
-    <%= f.text_field :regimen_legal %>
+    <%= f.select(:controlado, [['RL4'], ['RL7']] ) %>
   </div>
   <div class="field">
     <%= f.label :cantidad %><br>
-    <%= f.text_field :cantidad %>
+    <%= f.number_field(:cantidad, min: 0) %>
   </div>
   <div class="field">
     <%= f.label :CAS %><br>
@@ -41,11 +41,11 @@
   </div>
   <div class="field">
     <%= f.label :uso %><br>
-    <%= f.text_field :uso %>
+    <%= f.select(:uso, options_for_select(["Investigacion", "Docencia", "Extension", "Gestion"])) %>
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.text_field :status %>
+    <%= f.select(:status, [['Buen estado'], ['Danado'] ] ) %>
   </div>
   <div class="field">
     <%= f.label :responsable %><br>

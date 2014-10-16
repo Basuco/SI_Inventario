@@ -25,15 +25,15 @@
   </div>
   <div class="field">
     <%= f.label :no_bien_nac %><br>
-    <%= f.number_field :no_bien_nac %>
+    <%= f.number_field(:no_bien_nac, min: 0) %>
   </div>
   <div class="field">
     <%= f.label :estado %><br>
-    <%= f.text_field :estado %>
+    <%= f.select(:estado, [['Operativo'], ['Inoperativo'], ['Desuso'],['Reservado'] ] ) %>
   </div>
   <div class="field">
     <%= f.label :uso %><br>
-    <%= f.text_field :uso %>
+    <%= f.select(:uso, [['Investigacion'], ['Docencia'], ['Extension'],['Gestion']], { :multiple => true, :size => 5 } ) %>
   </div>
   <div class="field">
     <%= f.label :responsable %><br>
