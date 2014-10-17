@@ -4,5 +4,5 @@ class Equipo < ActiveRecord::Base
 	validates :ubicacion, presence: true
 	validates :responsable, presence: true
 	validates :nombre, presence: true
-
+	
 end

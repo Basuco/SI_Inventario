@@ -44,12 +44,16 @@
     <br>
     <%= f.check_box :Investigacion %>
     <%= f.label :Investigacion %><br>
-    <%= check_box_tag 'equipo_uso[]', 'Docencia' %>
+    <%= f.check_box :Docencia %>
     <%= f.label :Docencia %><br>
-    <%= check_box_tag 'equipo_uso[]', 'Extension' %>
+    <%= f.check_box :Extension %>
     <%= f.label :Extension %><br>
-    <%= check_box_tag 'equipo_uso[]', 'Gestion' %>
+    <%= f.check_box :Gestion %>
     <%= f.label :Gestion %><br>
+  </div>
+  <div class="field">
+    <%= f.label :Calibrado %><br>
+    <%= f.select(:Calibrado, [[''],['Si'], ['No'], ['Desconocido'] ] ) %>
   </div>
   <div class="field">
     <%= f.label :responsable %><br>

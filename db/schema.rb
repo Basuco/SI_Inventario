@@ -48,6 +48,7 @@ ActiveRecord::Schema.define(version: 20141010042108) do
     t.boolean  "Docencia"
     t.boolean  "Extension"
     t.boolean  "Gestion"
+    t.string   "Calibrado"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -19,6 +19,7 @@ class CreateEquipos < ActiveRecord::Migration
       t.boolean :Docencia
       t.boolean :Extension
       t.boolean :Gestion
+      t.string :Calibrado
 
       t.timestamps
     end
