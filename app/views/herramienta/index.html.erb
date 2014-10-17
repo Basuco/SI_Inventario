@@ -1,4 +1,4 @@
-<h1>Listing herramienta</h1>
+<h1>Herramientas</h1>
 
 <table>
   <thead>
@@ -32,9 +32,9 @@
         <td><%= herramientum.material %></td>
         <td><%= herramientum.factura %></td>
         <td><%= herramientum.de_un_juego %></td>
-        <td><%= link_to 'Show', herramientum %></td>
+        <td><%= link_to 'Ver', herramientum %></td>
         <td><%= link_to 'Edit', edit_herramientum_path(herramientum) %></td>
-        <td><%= link_to 'Destroy', herramientum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Elim', herramientum, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -42,4 +42,4 @@
 
 <br>
 
-<%= link_to 'New Herramientum', new_herramientum_path %>
+<%= link_to 'Nueva Herramienta', new_herramientum_path %>

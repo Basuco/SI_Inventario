@@ -1,7 +1,7 @@
 <%= form_for(@sustancia_quimica) do |f| %>
   <% if @sustancia_quimica.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@sustancia_quimica.errors.count, "error") %> prohibited this sustancia_quimica from being saved:</h2>
+      <h2><%= pluralize(@sustancia_quimica.errors.count, "error") %> prohiben esta sustancia quimica de ser guardada:</h2>
 
       <ul>
       <% @sustancia_quimica.errors.full_messages.each do |message| %>

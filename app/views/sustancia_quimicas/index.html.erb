@@ -1,4 +1,4 @@
-<h1>Listing sustancia_quimicas</h1>
+<h1>Sustancias Quimicas</h1>
 
 <table>
   <thead>
@@ -36,9 +36,9 @@
         <td><%= sustancia_quimica.ubicacion %></td>
         <td><%= sustancia_quimica.caducidad %></td>
         <td><%= sustancia_quimica.peligro %></td>
-        <td><%= link_to 'Show', sustancia_quimica %></td>
+        <td><%= link_to 'Ver', sustancia_quimica %></td>
         <td><%= link_to 'Edit', edit_sustancia_quimica_path(sustancia_quimica) %></td>
-        <td><%= link_to 'Destroy', sustancia_quimica, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Elim', sustancia_quimica, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -46,4 +46,4 @@
 
 <br>
 
-<%= link_to 'New Sustancia quimica', new_sustancia_quimica_path %>
+<%= link_to 'Nueva Sustancia Quimica', new_sustancia_quimica_path %>

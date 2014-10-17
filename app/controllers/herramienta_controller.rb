@@ -22,7 +22,7 @@ class HerramientaController < ApplicationController
     @herramientum = Herramientum.new(herramientum_params)
 	respond_to do |format|
 		if @herramientum.save
-			format.html { redirect_to @herramientum, notice: 'Herramientas was successfully created.' }
+			format.html { redirect_to @herramientum, notice: 'Herramienta fue creado de forma exitosa.' }
 			format.json { render :show, status: :created, location: @herramientum }
 		else
 			format.html { render :new }
@@ -36,7 +36,7 @@ class HerramientaController < ApplicationController
   def update
 	  respond_to do |format|
 		if @herramientum.update(herramientum_params)
-			format.html { redirect_to @herramientum, notice: 'Herramientas was successfully updated.' }
+			format.html { redirect_to @herramientum, notice: 'Herramienta fue actualizado de forma exitosa.' }
 			format.json { render :show, status: :ok, location: @Herramientum }
 		else
 			format.html { render :edit }
@@ -50,7 +50,7 @@ class HerramientaController < ApplicationController
   def destroy
     @herramientum.destroy
 	respond_to do |format|
-      format.html { redirect_to herramienta_url, notice: 'Herramientas was successfully destroyed.' }
+      format.html { redirect_to herramienta_url, notice: 'Herramienta fue eliminado de forma exitosa.' }
       format.json { head :no_content }
     end
 #     respond_with(@herramientum)

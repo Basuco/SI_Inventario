@@ -1,4 +1,4 @@
-<h1>Listing instrumentos</h1>
+<h1>Instrumentos</h1>
 
 <table>
   <thead>
@@ -34,9 +34,9 @@
         <td><%= instrumento.ultima_calibracion %></td>
         <td><%= instrumento.responsable %></td>
         <td><%= instrumento.no_bien_nac %></td>
-        <td><%= link_to 'Show', instrumento %></td>
+        <td><%= link_to 'Ver', instrumento %></td>
         <td><%= link_to 'Edit', edit_instrumento_path(instrumento) %></td>
-        <td><%= link_to 'Destroy', instrumento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Elim', instrumento, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -44,4 +44,4 @@
 
 <br>
 
-<%= link_to 'New Instrumento', new_instrumento_path %>
+<%= link_to 'Nuevo Instrumento', new_instrumento_path %>

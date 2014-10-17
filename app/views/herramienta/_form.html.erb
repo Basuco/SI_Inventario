@@ -1,7 +1,7 @@
 <%= form_for(@herramientum) do |f| %>
   <% if @herramientum.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@herramientum.errors.count, "error") %> prohibited this herramientum from being saved:</h2>
+      <h2><%= pluralize(@herramientum.errors.count, "error") %> prohiben esta herramienta de ser guardada:</h2>
 
       <ul>
       <% @herramientum.errors.full_messages.each do |message| %>

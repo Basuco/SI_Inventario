@@ -22,7 +22,7 @@ class EquiposController < ApplicationController
     @equipo = Equipo.new(equipo_params)
     respond_to do |format|
 		if @equipo.save
-			format.html { redirect_to @equipo, notice: 'Consumible was successfully created.' }
+			format.html { redirect_to @equipo, notice: 'El equipo fue creado de forma exitosa.' }
 			format.json { render :show, status: :created, location: @equipo }
 		else
 			format.html { render :new }
@@ -36,7 +36,7 @@ class EquiposController < ApplicationController
   def update
 	  respond_to do |format|
       if @equipo.update(equipo_params)
-        format.html { redirect_to @equipo, notice: 'Equipo correctamente creado.' }
+        format.html { redirect_to @equipo, notice: 'El equipo fue actualizado de forma exitosa.' }
         format.json { render :show, status: :ok, location: @equipo }
       else
         format.html { render :edit }
@@ -50,7 +50,7 @@ class EquiposController < ApplicationController
   def destroy
     @equipo.destroy
 	respond_to do |format|
-      format.html { redirect_to equipos_url, notice: 'Consumible was successfully destroyed.' }
+      format.html { redirect_to equipos_url, notice: 'El equipo fue eliminado de forma exitosa.' }
       format.json { head :no_content }
     end
 #     respond_with(@equipo)

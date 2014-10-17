@@ -1,7 +1,7 @@
 <%= form_for(@instrumento) do |f| %>
   <% if @instrumento.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@instrumento.errors.count, "error") %> prohibited this instrumento from being saved:</h2>
+      <h2><%= pluralize(@instrumento.errors.count, "error") %> prohiben este instrumento de ser guardado:</h2>
 
       <ul>
       <% @instrumento.errors.full_messages.each do |message| %>
@@ -41,7 +41,7 @@
   </div>
   <div class="field">
     <%= f.label :estado %><br>
-    <%= f.select(:status, [['Operativo'], ['Inoperativo'], ['Desuso'],['Reservado'] ] ) %>
+    <%= f.select(:estado, [['Operativo'], ['Inoperativo'], ['Desuso'],['Reservado'] ] ) %>
   </div>
   <div class="field">
     <%= f.label :ubicacion %><br>

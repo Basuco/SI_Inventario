@@ -22,7 +22,7 @@ class ConsumiblesController < ApplicationController
     @consumible = Consumible.new(consumible_params)
 	respond_to do |format|
 		if @consumible.save
-			format.html { redirect_to @consumible, notice: 'Consumible was successfully created.' }
+			format.html { redirect_to @consumible, notice: 'Consumible fue creado de forma exitosa.' }
 			format.json { render :show, status: :created, location: @consumible }
 		else
 			format.html { render :new }
@@ -35,7 +35,7 @@ class ConsumiblesController < ApplicationController
   def update
     respond_to do |format|
       if @consumible.update(consumible_params)
-        format.html { redirect_to @consumible, notice: 'Consumible was successfully updated.' }
+        format.html { redirect_to @consumible, notice: 'Consumible fue actualizado de forma exitosa.' }
         format.json { render :show, status: :ok, location: @Consumible }
       else
         format.html { render :edit }
@@ -48,7 +48,7 @@ class ConsumiblesController < ApplicationController
   def destroy
     @consumible.destroy
 	respond_to do |format|
-      format.html { redirect_to consumibles_url, notice: 'Consumible was successfully destroyed.' }
+      format.html { redirect_to consumibles_url, notice: 'Consumible fue eliminadode forma exitosa.' }
       format.json { head :no_content }
     end
 #     respond_with(@consumible)

@@ -22,7 +22,7 @@ class InstrumentosController < ApplicationController
     @instrumento = Instrumento.new(instrumento_params)
     respond_to do |format|
 		if @instrumento.save
-			format.html { redirect_to @instrumento, notice: 'Instrumento was successfully created.' }
+			format.html { redirect_to @instrumento, notice: 'Instrumento fue creado de forma exitosa.' }
 			format.json { render :show, status: :created, location: @instrumento }
 		else
 			format.html { render :new }
@@ -36,7 +36,7 @@ class InstrumentosController < ApplicationController
   def update
 	  respond_to do |format|
 		if @instrumento.update(instrumento_params)
-			format.html { redirect_to @instrumento, notice: 'Instrumento was successfully updated.' }
+			format.html { redirect_to @instrumento, notice: 'Instrumento fue actualizado de forma exitosa.' }
 			format.json { render :show, status: :ok, location: @Instrumento }
 		else
 			format.html { render :edit }
@@ -50,7 +50,7 @@ class InstrumentosController < ApplicationController
   def destroy
     @instrumento.destroy
 	respond_to do |format|
-      format.html { redirect_to instrumentos_url, notice: 'Instrumento was successfully destroyed.' }
+      format.html { redirect_to instrumentos_url, notice: 'Instrumento fue eliminado de forma exitosa.' }
       format.json { head :no_content }
 	end
 #     respond_with(@instrumento)

@@ -20,17 +20,40 @@ class SustanciaQuimicasController < ApplicationController
 
   def create
     @sustancia_quimica = SustanciaQuimica.new(sustancia_quimica_params)
-    @sustancia_quimica.save
+    respond_to do |format|
+		if @sustancia_quimica.save
+			format.html { redirect_to @sustancia_quimica, notice: 'Sustancia Quimica fue creada de forma exitosa.' }
+			format.json { render :show, status: :created, location: @sustancia_quimica }
+		else
+			format.html { render :new }
+			format.json { render json: @sustancia_quimica.errors, status: :unprocessable_entity }
+		end
+	end
+#     @sustancia_quimica.save
 #     respond_with(@sustancia_quimica)
   end
 
   def update
-    @sustancia_quimica.update(sustancia_quimica_params)
+#     @sustancia_quimica.update(sustancia_quimica_params)
+	 respond_to do |format|
+		if @sustancia_quimica.update(sustancia_quimica_params)
+			format.html { redirect_to @sustancia_quimica, notice: 'Sustancia Quimica fue actualizado de forma exitosa.' }
+			format.json { render :show, status: :ok, location: @sustancia_quimica }
+		else
+			format.html { render :edit }
+			format.json { render json: @sustancia_quimica.errors, status: :unprocessable_entity }
+		end
+	  end
 #     respond_with(@sustancia_quimica)
   end
 
   def destroy
-    @sustancia_quimica.destroy
+	  @sustancia_quimica.destroy
+	respond_to do |format|
+      format.html { redirect_to instrumentos_url, notice: 'Sustancia Quimica fue eliminado de forma exitosa.' }
+      format.json { head :no_content }
+	end
+#     @sustancia_quimica.destroy
 #     respond_with(@sustancia_quimica)
   end
 

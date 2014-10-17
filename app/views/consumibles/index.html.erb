@@ -1,4 +1,4 @@
-<h1>Listing consumibles</h1>
+<h1>Consumibles</h1>
 
 <table>
   <thead>
@@ -26,9 +26,9 @@
         <td><%= consumible.ubicacion %></td>
         <td><%= consumible.uso %></td>
         <td><%= consumible.responsable %></td>
-        <td><%= link_to 'Show', consumible %></td>
+        <td><%= link_to 'Ver', consumible %></td>
         <td><%= link_to 'Edit', edit_consumible_path(consumible) %></td>
-        <td><%= link_to 'Destroy', consumible, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Elim', consumible, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +36,4 @@
 
 <br>
 
-<%= link_to 'New Consumible', new_consumible_path %>
+<%= link_to 'Nuevo Consumible', new_consumible_path %>
