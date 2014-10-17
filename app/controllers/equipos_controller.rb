@@ -62,6 +62,6 @@ class EquiposController < ApplicationController
     end
 
     def equipo_params
-      params.require(:equipo).permit(:nombre, :marca, :modelo, :serial, :no_bien_nac, :status, :ultima_calibracion, :uso, :responsable, :ubicacion, :fecha_adquisicion, :orden_compra, :costo, :factura)
+      params.require(:equipo).permit(:nombre, :marca, :modelo, :serial, :no_bien_nac, :status, :ultima_calibracion, :uso, :responsable, :ubicacion, :fecha_adquisicion, :orden_compra, :costo, :factura, :Investigacion, :Docencia, :Extension, :Gestion)
     end
 end

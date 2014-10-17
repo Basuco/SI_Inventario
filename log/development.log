@@ -33541,3 +33541,4121 @@ Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-16 10:03:10 -0430
 
 
 Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-16 10:03:10 -0430
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 08:59:50 -0430
+
+PG::ConnectionBad (FATAL:  Peer authentication failed for user "alejandro"
+):
+  activerecord (4.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `initialize'
+  activerecord (4.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `new'
+  activerecord (4.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:888:in `connect'
+  activerecord (4.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:568:in `initialize'
+  activerecord (4.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `new'
+  activerecord (4.1.6) lib/active_record/connection_adapters/postgresql_adapter.rb:41:in `postgresql_connection'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:435:in `new_connection'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:445:in `checkout_new_connection'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:416:in `acquire_connection'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:351:in `block in checkout'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:350:in `checkout'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:265:in `block in connection'
+  /usr/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:264:in `connection'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:541:in `retrieve_connection'
+  activerecord (4.1.6) lib/active_record/connection_handling.rb:113:in `retrieve_connection'
+  activerecord (4.1.6) lib/active_record/connection_handling.rb:87:in `connection'
+  activerecord (4.1.6) lib/active_record/migration.rb:388:in `check_pending!'
+  activerecord (4.1.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 09:01:12 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (32.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 91ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-17 09:01:13 -0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (122.3ms)
+Completed 200 OK in 947ms (Views: 879.7ms | ActiveRecord: 35.3ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+
+Started GET "/assets/images/favicon.ico" for 127.0.0.1 at 2014-10-17 09:01:14 -0430
+
+ActionController::RoutingError (No route matches [GET] "/images/favicon.ico"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (37.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (77.1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-10-17 09:01:21 -0430
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YlJox9mQrZVz0IdVzZ/w9yHjwXwVRB4AdvQnnx5clE8=", "user"=>{"email"=>"juniusaga@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (35.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."email" = 'juniusaga@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 156ms
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YlJox9mQrZVz0IdVzZ/w9yHjwXwVRB4AdvQnnx5clE8=", "user"=>{"email"=>"juniusaga@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (0.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 145ms (Views: 64.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:22 -0430
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YlJox9mQrZVz0IdVzZ/w9yHjwXwVRB4AdvQnnx5clE8=", "user"=>{"email"=>"juniusaga1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (37.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'juniusaga1@gmail.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = $1, "last_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-10-17 13:31:31.588675"], ["last_sign_in_at", "2014-10-15 22:59:23.768424"], ["sign_in_count", 7], ["updated_at", "2014-10-17 13:31:31.589848"]]
+  [1m[35m (21.5ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 216ms (ActiveRecord: 59.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+Processing by WelcomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 81.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:31 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:32 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:32 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:32 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:32 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:32 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:32 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:01:32 -0430
+
+
+Started GET "/sustancia_quimicas" for 127.0.0.1 at 2014-10-17 09:02:29 -0430
+Processing by SustanciaQuimicasController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mSustanciaQuimica Load (47.5ms)[0m  [1mSELECT "sustancia_quimicas".* FROM "sustancia_quimicas"[0m
+  Rendered sustancia_quimicas/index.html.erb within layouts/application (67.5ms)
+Completed 200 OK in 189ms (Views: 107.9ms | ActiveRecord: 50.1ms)
+
+
+Started GET "/sustancia_quimicas/new" for 127.0.0.1 at 2014-10-17 09:02:33 -0430
+Processing by SustanciaQuimicasController#new as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered sustancia_quimicas/_form.html.erb (45.4ms)
+  Rendered sustancia_quimicas/new.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 111ms (Views: 107.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/sustancia_quimicas" for 127.0.0.1 at 2014-10-17 09:05:26 -0430
+Processing by SustanciaQuimicasController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mSustanciaQuimica Load (0.1ms)[0m  SELECT "sustancia_quimicas".* FROM "sustancia_quimicas"
+  Rendered sustancia_quimicas/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/sustancia_quimicas/new" for 127.0.0.1 at 2014-10-17 09:05:28 -0430
+Processing by SustanciaQuimicasController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered sustancia_quimicas/_form.html.erb (6.9ms)
+  Rendered sustancia_quimicas/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 104ms (Views: 100.8ms | ActiveRecord: 0.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 264ms (Views: 211.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:16:12 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 09:16:14 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (42.9ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (45.8ms)
+Completed 200 OK in 168ms (Views: 100.8ms | ActiveRecord: 43.2ms)
+
+
+Started GET "/equipos/new" for 127.0.0.1 at 2014-10-17 09:16:15 -0430
+Processing by EquiposController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/_form.html.erb (107.7ms)
+  Rendered equipos/new.html.erb within layouts/application (110.9ms)
+Completed 500 Internal Server Error in 116ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 2)):
+    42:   <div class="field">
+    43:     <%= f.label :uso %><br>
+    44:     <br>
+    45:     <%= check_box :Investigacion %>
+    46:     <%= f.label :Investigacion %><br>
+    47:     <%= check_box_tag 'equipo_uso[]', 'Docencia' %>
+    48:     <%= f.label :Docencia %><br>
+  app/views/equipos/_form.html.erb:45:in `block in _app_views_equipos__form_html_erb__1608549806414307822_45516620'
+  app/views/equipos/_form.html.erb:1:in `_app_views_equipos__form_html_erb__1608549806414307822_45516620'
+  app/views/equipos/new.html.erb:3:in `_app_views_equipos_new_html_erb___1501367775956362556_45422980'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (16.4ms)
+
+
+Started GET "/equipos/new" for 127.0.0.1 at 2014-10-17 09:16:15 -0430
+Processing by EquiposController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered equipos/_form.html.erb (7.8ms)
+  Rendered equipos/new.html.erb within layouts/application (9.5ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 2)):
+    42:   <div class="field">
+    43:     <%= f.label :uso %><br>
+    44:     <br>
+    45:     <%= check_box :Investigacion %>
+    46:     <%= f.label :Investigacion %><br>
+    47:     <%= check_box_tag 'equipo_uso[]', 'Docencia' %>
+    48:     <%= f.label :Docencia %><br>
+  app/views/equipos/_form.html.erb:45:in `block in _app_views_equipos__form_html_erb__1608549806414307822_36946100'
+  app/views/equipos/_form.html.erb:1:in `_app_views_equipos__form_html_erb__1608549806414307822_36946100'
+  app/views/equipos/new.html.erb:3:in `_app_views_equipos_new_html_erb___1501367775956362556_36898580'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 09:17:10 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 266ms (Views: 215.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:17:10 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:17:11 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 09:17:12 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.3ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 104ms (Views: 99.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/equipos/new" for 127.0.0.1 at 2014-10-17 09:17:13 -0430
+Processing by EquiposController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/_form.html.erb (110.1ms)
+  Rendered equipos/new.html.erb within layouts/application (113.6ms)
+Completed 500 Internal Server Error in 119ms
+
+ActionView::Template::Error (undefined method `Investigacion' for #<Equipo:0x00000003ecd698>):
+    42:   <div class="field">
+    43:     <%= f.label :uso %><br>
+    44:     <br>
+    45:     <%= f.check_box :Investigacion %>
+    46:     <%= f.label :Investigacion %><br>
+    47:     <%= check_box_tag 'equipo_uso[]', 'Docencia' %>
+    48:     <%= f.label :Docencia %><br>
+  app/views/equipos/_form.html.erb:45:in `block in _app_views_equipos__form_html_erb___1122194303722187221_33106500'
+  app/views/equipos/_form.html.erb:1:in `_app_views_equipos__form_html_erb___1122194303722187221_33106500'
+  app/views/equipos/new.html.erb:3:in `_app_views_equipos_new_html_erb___3985700277778017027_32941660'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.4ms)
+
+
+Started GET "/equipos/new" for 127.0.0.1 at 2014-10-17 09:17:13 -0430
+Processing by EquiposController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered equipos/_form.html.erb (4.6ms)
+  Rendered equipos/new.html.erb within layouts/application (5.4ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `Investigacion' for #<Equipo:0x00000003bbc760>):
+    42:   <div class="field">
+    43:     <%= f.label :uso %><br>
+    44:     <br>
+    45:     <%= f.check_box :Investigacion %>
+    46:     <%= f.label :Investigacion %><br>
+    47:     <%= check_box_tag 'equipo_uso[]', 'Docencia' %>
+    48:     <%= f.label :Docencia %><br>
+  app/views/equipos/_form.html.erb:45:in `block in _app_views_equipos__form_html_erb___1122194303722187221_31359920'
+  app/views/equipos/_form.html.erb:1:in `_app_views_equipos__form_html_erb___1122194303722187221_31359920'
+  app/views/equipos/new.html.erb:3:in `_app_views_equipos_new_html_erb___3985700277778017027_31312720'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 09:22:08 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 250ms (Views: 200.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:22:09 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 09:22:11 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.4ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 97ms (Views: 91.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/equipos/new" for 127.0.0.1 at 2014-10-17 09:22:11 -0430
+Processing by EquiposController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/_form.html.erb (84.1ms)
+  Rendered equipos/new.html.erb within layouts/application (86.8ms)
+Completed 500 Internal Server Error in 93ms
+
+ActionView::Template::Error (undefined method `Investigacion' for #<Equipo:0x00000005367860>):
+    42:   <div class="field">
+    43:     <%= f.label :uso %><br>
+    44:     <br>
+    45:     <%= f.check_box :Investigacion %>
+    46:     <%= f.label :Investigacion %><br>
+    47:     <%= check_box_tag 'equipo_uso[]', 'Docencia' %>
+    48:     <%= f.label :Docencia %><br>
+  app/views/equipos/_form.html.erb:45:in `block in _app_views_equipos__form_html_erb__2525500650480430151_43903220'
+  app/views/equipos/_form.html.erb:1:in `_app_views_equipos__form_html_erb__2525500650480430151_43903220'
+  app/views/equipos/new.html.erb:3:in `_app_views_equipos_new_html_erb__1458555071764799674_43742160'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (6.9ms)
+
+
+Started GET "/equipos/new" for 127.0.0.1 at 2014-10-17 09:22:11 -0430
+Processing by EquiposController#new as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered equipos/_form.html.erb (4.7ms)
+  Rendered equipos/new.html.erb within layouts/application (5.6ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `Investigacion' for #<Equipo:0x000000050f1860>):
+    42:   <div class="field">
+    43:     <%= f.label :uso %><br>
+    44:     <br>
+    45:     <%= f.check_box :Investigacion %>
+    46:     <%= f.label :Investigacion %><br>
+    47:     <%= check_box_tag 'equipo_uso[]', 'Docencia' %>
+    48:     <%= f.label :Docencia %><br>
+  app/views/equipos/_form.html.erb:45:in `block in _app_views_equipos__form_html_erb__2525500650480430151_42458280'
+  app/views/equipos/_form.html.erb:1:in `_app_views_equipos__form_html_erb__2525500650480430151_42458280'
+  app/views/equipos/new.html.erb:3:in `_app_views_equipos_new_html_erb__1458555071764799674_42432820'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (37.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (52.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsuarios (20141010001211)
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (94.6ms)[0m  [1mCREATE TABLE "usuarios" ("id" serial primary key, "usbid" character varying(255), "nombre" character varying(255), "apellido" character varying(255), "laboratorio" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010001211"]]
+  [1m[36m (15.6ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20141010010229)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (80.6ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (29.9ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (32.1ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010010229"]]
+  [1m[36m (15.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateEquipos (20141010023524)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (70.1ms)[0m  [1mCREATE TABLE "equipos" ("id" serial primary key, "nombre" character varying(255), "marca" character varying(255), "modelo" character varying(255), "serial" character varying(255), "no_bien_nac" integer, "status" character varying(255), "ultima_calibracion" date, "uso" character varying(255), "responsable" character varying(255), "ubicacion" character varying(255), "fecha_adquisicion" date, "orden_compra" character varying(255), "costo" float, "factura" character varying(255), "Investigacion" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010023524"]]
+  [1m[36m (16.8ms)[0m  [1mCOMMIT[0m
+Migrating to CreateInstrumentos (20141010025241)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (57.9ms)[0m  [1mCREATE TABLE "instrumentos" ("id" serial primary key, "nombre" character varying(255), "marca" character varying(255), "modelo" character varying(255), "unidad_medida" character varying(255), "capacidad" float, "material" character varying(255), "uso" character varying(255), "estado" character varying(255), "ubicacion" character varying(255), "ultima_calibracion" date, "responsable" character varying(255), "no_bien_nac" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010025241"]]
+  [1m[36m (15.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateHerramienta (20141010031951)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (58.5ms)[0m  [1mCREATE TABLE "herramienta" ("id" serial primary key, "nombre" character varying(255), "marca" character varying(255), "tipo" character varying(255), "no_bien_nac" integer, "estado" character varying(255), "uso" character varying(255), "responsable" character varying(255), "ubicacion" character varying(255), "material" character varying(255), "factura" character varying(255), "de_un_juego" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010031951"]]
+  [1m[36m (15.2ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSustanciaQuimicas (20141010041756)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (70.5ms)[0m  [1mCREATE TABLE "sustancia_quimicas" ("id" serial primary key, "nombre" character varying(255), "pureza" character varying(255), "estado_materia" character varying(255), "controlado" boolean, "regimen_legal" character varying(255), "cantidad" character varying(255), "CAS" character varying(255), "uso" character varying(255), "status" character varying(255), "responsable" character varying(255), "ubicacion" character varying(255), "caducidad" date, "peligro" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010041756"]]
+  [1m[36m (14.6ms)[0m  [1mCOMMIT[0m
+Migrating to CreateConsumibles (20141010042108)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (70.7ms)[0m  [1mCREATE TABLE "consumibles" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "dimensiones" character varying(255), "material" character varying(255), "cantidad" character varying(255), "ubicacion" character varying(255), "uso" character varying(255), "responsable" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010042108"]]
+  [1m[36m (12.0ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 09:31:24 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 51ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-17 09:31:24 -0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (66.1ms)
+Completed 200 OK in 283ms (Views: 246.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:25 -0430
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-10-17 09:31:29 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 107ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "user"=>{"email"=>"juniusaga1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Registrarse"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'juniusaga1@gmail.com' LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-17 14:01:43.302077"], ["email", "juniusaga1@gmail.com"], ["encrypted_password", "$2a$10$OF3v30B3TEPDHnyCAlh/8OwzMpMG7jwIqrhtrOqG8TCAK/EWec2v2"], ["updated_at", "2014-10-17 14:01:43.302077"]]
+  [1m[35m (13.8ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 1  [["current_sign_in_at", "2014-10-17 14:01:43.322530"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2014-10-17 14:01:43.322530"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2014-10-17 14:01:43.324705"]]
+  [1m[36m (4.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 280ms (ActiveRecord: 20.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 97ms (Views: 95.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:31:43 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 09:31:49 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.3ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 97ms (Views: 93.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/equipos/new" for 127.0.0.1 at 2014-10-17 09:31:50 -0430
+Processing by EquiposController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/_form.html.erb (51.8ms)
+  Rendered equipos/new.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 124ms (Views: 119.0ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/equipos" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+Processing by EquiposController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"", "marca"=>"", "modelo"=>"", "serial"=>"", "no_bien_nac"=>"", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"0", "responsable"=>"", "ubicacion"=>"", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "commit"=>"Create Equipo"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mEquipo Exists (0.4ms)[0m  SELECT  1 AS one FROM "equipos"  WHERE "equipos"."no_bien_nac" IS NULL LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  Rendered equipos/_form.html.erb (41.9ms)
+  Rendered equipos/new.html.erb within layouts/application (43.0ms)
+Completed 200 OK in 113ms (Views: 105.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:32 -0430
+
+
+Started POST "/equipos" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+Processing by EquiposController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"213", "marca"=>"", "modelo"=>"", "serial"=>"13", "no_bien_nac"=>"1", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"1", "responsable"=>"213", "ubicacion"=>"213", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "commit"=>"Create Equipo"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mEquipo Exists (0.3ms)[0m  SELECT  1 AS one FROM "equipos"  WHERE "equipos"."no_bien_nac" = 1 LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "equipos" ("Investigacion", "created_at", "factura", "fecha_adquisicion", "marca", "modelo", "no_bien_nac", "nombre", "orden_compra", "responsable", "serial", "status", "ubicacion", "ultima_calibracion", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["Investigacion", "t"], ["created_at", "2014-10-17 14:03:41.355400"], ["factura", ""], ["fecha_adquisicion", "2014-10-17"], ["marca", ""], ["modelo", ""], ["no_bien_nac", 1], ["nombre", "213"], ["orden_compra", ""], ["responsable", "213"], ["serial", "13"], ["status", "Operativo"], ["ubicacion", "213"], ["ultima_calibracion", "2014-10-17"], ["updated_at", "2014-10-17 14:03:41.355400"]]
+  [1m[35m (50.6ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/equipos/1
+Completed 302 Found in 59ms (ActiveRecord: 51.8ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 103ms (Views: 100.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:33:41 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 09:33:47 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 99ms (Views: 96.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 257ms (Views: 205.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 09:45:00 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 09:45:02 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.4ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (52.6ms)
+Completed 500 Internal Server Error in 58ms
+
+ActionView::Template::Error (undefined local variable or method `equipo_uso' for #<#<Class:0x00000003c68358>:0x00000003c67340>):
+    25:     <% @equipos.each do |equipo| %>
+    26:       <tr>
+    27:         <td><pre><%= equipo.nombre %></pre></td>
+    28:         <td><pre><%= equipo_uso %></pre></td>
+    29: <!--         <td><%= equipo.marca %></td> -->
+    30: <!--         <td><%= equipo.modelo %></td> -->
+    31: <!--         <td><%= equipo.serial %></td> -->
+  app/views/equipos/index.html.erb:28:in `block in _app_views_equipos_index_html_erb___1752479399409144454_31687240'
+  app/views/equipos/index.html.erb:25:in `_app_views_equipos_index_html_erb___1752479399409144454_31687240'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.4ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 09:45:02 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.3ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (8.3ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `equipo_uso' for #<#<Class:0x00000003c68358>:0x00000003ba82d8>):
+    25:     <% @equipos.each do |equipo| %>
+    26:       <tr>
+    27:         <td><pre><%= equipo.nombre %></pre></td>
+    28:         <td><pre><%= equipo_uso %></pre></td>
+    29: <!--         <td><%= equipo.marca %></td> -->
+    30: <!--         <td><%= equipo.modelo %></td> -->
+    31: <!--         <td><%= equipo.serial %></td> -->
+  app/views/equipos/index.html.erb:28:in `block in _app_views_equipos_index_html_erb___1752479399409144454_31273820'
+  app/views/equipos/index.html.erb:25:in `_app_views_equipos_index_html_erb___1752479399409144454_31273820'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (8.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 257ms (Views: 206.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:19:12 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:19:14 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.4ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (21.1ms)
+Completed 200 OK in 116ms (Views: 111.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:22:14 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/index.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:58: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:60: syntax error, unexpected $end, expecting keyword_end):
+  app/views/equipos/index.html.erb:58: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/equipos/index.html.erb:60: syntax error, unexpected $end, expecting keyword_end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 95ms (Views: 92.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:28 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:22:30 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:58: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:60: syntax error, unexpected $end, expecting keyword_end):
+  app/views/equipos/index.html.erb:58: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/equipos/index.html.erb:60: syntax error, unexpected $end, expecting keyword_end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.4ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:22:30 -0430
+Processing by EquiposController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered equipos/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:58: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:60: syntax error, unexpected $end, expecting keyword_end):
+  app/views/equipos/index.html.erb:58: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/equipos/index.html.erb:60: syntax error, unexpected $end, expecting keyword_end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:22:57 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 95ms (Views: 93.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:22:58 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:23:15 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:28: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...end=( if equipo.Investigacion );@output_buffer.safe_append='...
+...                               ^
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:46: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;     end 
+                 ^
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:56: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/equipos/index.html.erb:28: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/equipos/index.html.erb:46: syntax error, unexpected keyword_end, expecting ')'
+  app/views/equipos/index.html.erb:54: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/equipos/index.html.erb:56: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:23:35 -0430
+Processing by EquiposController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered equipos/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:54: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:56: syntax error, unexpected $end, expecting keyword_end):
+  app/views/equipos/index.html.erb:54: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/equipos/index.html.erb:56: syntax error, unexpected $end, expecting keyword_end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.5ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:27:04 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:56: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/index.html.erb:58: syntax error, unexpected $end, expecting keyword_end):
+  app/views/equipos/index.html.erb:56: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/equipos/index.html.erb:58: syntax error, unexpected $end, expecting keyword_end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.1ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+Processing by EquiposController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEquipo Load (0.2ms)[0m  [1mSELECT "equipos".* FROM "equipos"[0m
+  Rendered equipos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 95ms (Views: 93.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:28:02 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+Processing by EquiposController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEquipo Load (0.3ms)[0m  [1mSELECT "equipos".* FROM "equipos"[0m
+  Rendered equipos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 100ms (Views: 67.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:33:09 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:33:10 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:10 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:10 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:10 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:10 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:33:10 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:33:10 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:33:10 -0430
+
+
+Started GET "/equipos/1/edit" for 127.0.0.1 at 2014-10-17 10:33:16 -0430
+Processing by EquiposController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEquipo Load (0.2ms)[0m  [1mSELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered equipos/_form.html.erb (72.9ms)
+  Rendered equipos/edit.html.erb within layouts/application (77.2ms)
+Completed 200 OK in 168ms (Views: 165.8ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/equipos/1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+Processing by EquiposController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"213", "marca"=>"", "modelo"=>"", "serial"=>"13", "no_bien_nac"=>"1", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"1", "responsable"=>"213", "ubicacion"=>"213", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "commit"=>"Update Equipo", "id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEquipo Load (0.2ms)[0m  [1mSELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mEquipo Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "equipos"  WHERE ("equipos"."no_bien_nac" = 1 AND "equipos"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/equipos/1
+Completed 302 Found in 40ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 93ms (Views: 90.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:21 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:33:22 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:33:24 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.3ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 98ms (Views: 95.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 96ms (Views: 94.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:33:56 -0430
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:34:31 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 94ms (Views: 92.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:35:22 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `equipo' for #<#<Class:0x000000055f8228>:0x0000000651f760>):
+    37: 
+    38: <p>
+    39:   <strong>Uso:</strong>
+    40:   <% if equipo.Investigacion %>
+    41:       <%= 'Inves' %>
+    42:     <% end %>
+    43: </p>
+  app/views/equipos/show.html.erb:40:in `_app_views_equipos_show_html_erb___891895938195144204_53030860'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (7.6ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 71ms (Views: 68.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:35:45 -0430
+  [1m[36m (27.3ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (65.1ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsuarios (20141010001211)
+  [1m[35m (0.5ms)[0m  BEGIN
+  [1m[36m (73.8ms)[0m  [1mCREATE TABLE "usuarios" ("id" serial primary key, "usbid" character varying(255), "nombre" character varying(255), "apellido" character varying(255), "laboratorio" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010001211"]]
+  [1m[36m (14.3ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20141010010229)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (79.3ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (43.3ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (53.5ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010010229"]]
+  [1m[36m (11.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateEquipos (20141010023524)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (85.8ms)[0m  [1mCREATE TABLE "equipos" ("id" serial primary key, "nombre" character varying(255), "marca" character varying(255), "modelo" character varying(255), "serial" character varying(255), "no_bien_nac" integer, "status" character varying(255), "ultima_calibracion" date, "uso" character varying(255), "responsable" character varying(255), "ubicacion" character varying(255), "fecha_adquisicion" date, "orden_compra" character varying(255), "costo" float, "factura" character varying(255), "Investigacion" boolean, "Docencia" boolean, "Extension" boolean, "Gestion" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010023524"]]
+  [1m[36m (10.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateInstrumentos (20141010025241)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (72.8ms)[0m  [1mCREATE TABLE "instrumentos" ("id" serial primary key, "nombre" character varying(255), "marca" character varying(255), "modelo" character varying(255), "unidad_medida" character varying(255), "capacidad" float, "material" character varying(255), "uso" character varying(255), "estado" character varying(255), "ubicacion" character varying(255), "ultima_calibracion" date, "responsable" character varying(255), "no_bien_nac" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010025241"]]
+  [1m[36m (20.4ms)[0m  [1mCOMMIT[0m
+Migrating to CreateHerramienta (20141010031951)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (86.9ms)[0m  [1mCREATE TABLE "herramienta" ("id" serial primary key, "nombre" character varying(255), "marca" character varying(255), "tipo" character varying(255), "no_bien_nac" integer, "estado" character varying(255), "uso" character varying(255), "responsable" character varying(255), "ubicacion" character varying(255), "material" character varying(255), "factura" character varying(255), "de_un_juego" boolean, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010031951"]]
+  [1m[36m (19.9ms)[0m  [1mCOMMIT[0m
+Migrating to CreateSustanciaQuimicas (20141010041756)
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (87.0ms)[0m  [1mCREATE TABLE "sustancia_quimicas" ("id" serial primary key, "nombre" character varying(255), "pureza" character varying(255), "estado_materia" character varying(255), "controlado" boolean, "regimen_legal" character varying(255), "cantidad" character varying(255), "CAS" character varying(255), "uso" character varying(255), "status" character varying(255), "responsable" character varying(255), "ubicacion" character varying(255), "caducidad" date, "peligro" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010041756"]]
+  [1m[36m (18.7ms)[0m  [1mCOMMIT[0m
+Migrating to CreateConsumibles (20141010042108)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (78.5ms)[0m  [1mCREATE TABLE "consumibles" ("id" serial primary key, "nombre" character varying(255), "descripcion" character varying(255), "dimensiones" character varying(255), "material" character varying(255), "cantidad" character varying(255), "ubicacion" character varying(255), "uso" character varying(255), "responsable" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20141010042108"]]
+  [1m[36m (17.8ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 401 Unauthorized in 50ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (70.0ms)
+Completed 200 OK in 301ms (Views: 258.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:24 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:38:25 -0430
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-10-17 10:38:26 -0430
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 100ms (Views: 98.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-10-17 10:38:32 -0430
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "user"=>{"email"=>"juniusaga1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Registrarse"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.6ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'juniusaga1@gmail.com' LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", "2014-10-17 15:08:33.115713"], ["email", "juniusaga1@gmail.com"], ["encrypted_password", "$2a$10$Jwt1ky6ggj4MbA3HXejgfeqyTHW3aksXGcyBRL0p.G9VG0VpY2hvS"], ["updated_at", "2014-10-17 15:08:33.115713"]]
+  [1m[35m (12.3ms)[0m  COMMIT
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "current_sign_in_ip" = $2, "last_sign_in_at" = $3, "last_sign_in_ip" = $4, "sign_in_count" = $5, "updated_at" = $6 WHERE "users"."id" = 1  [["current_sign_in_at", "2014-10-17 15:08:33.134827"], ["current_sign_in_ip", "127.0.0.1/32"], ["last_sign_in_at", "2014-10-17 15:08:33.134827"], ["last_sign_in_ip", "127.0.0.1/32"], ["sign_in_count", 1], ["updated_at", "2014-10-17 15:08:33.136815"]]
+  [1m[36m (4.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 183ms (ActiveRecord: 18.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 100ms (Views: 98.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:38:33 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:38:34 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.4ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 103ms (Views: 98.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/equipos/new" for 127.0.0.1 at 2014-10-17 10:38:35 -0430
+Processing by EquiposController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/_form.html.erb (52.8ms)
+  Rendered equipos/new.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 151ms (Views: 145.4ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/equipos" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+Processing by EquiposController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"", "marca"=>"", "modelo"=>"", "serial"=>"", "no_bien_nac"=>"", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"0", "responsable"=>"", "ubicacion"=>"", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "commit"=>"Create Equipo"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mEquipo Exists (0.3ms)[0m  SELECT  1 AS one FROM "equipos"  WHERE "equipos"."no_bien_nac" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered equipos/_form.html.erb (9.8ms)
+  Rendered equipos/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 122ms (Views: 110.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:38:38 -0430
+
+
+Started POST "/equipos" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+Processing by EquiposController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"oiwadio", "marca"=>"", "modelo"=>"", "serial"=>"oiawjdwaiod", "no_bien_nac"=>"12", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"1", "responsable"=>"214", "ubicacion"=>"214123", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "equipo_uso"=>["Docencia", "Extension", "Gestion"], "commit"=>"Create Equipo"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mEquipo Exists (0.2ms)[0m  SELECT  1 AS one FROM "equipos"  WHERE "equipos"."no_bien_nac" = 12 LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "equipos" ("Investigacion", "created_at", "factura", "fecha_adquisicion", "marca", "modelo", "no_bien_nac", "nombre", "orden_compra", "responsable", "serial", "status", "ubicacion", "ultima_calibracion", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15) RETURNING "id"[0m  [["Investigacion", "t"], ["created_at", "2014-10-17 15:08:53.075800"], ["factura", ""], ["fecha_adquisicion", "2014-10-17"], ["marca", ""], ["modelo", ""], ["no_bien_nac", 12], ["nombre", "oiwadio"], ["orden_compra", ""], ["responsable", "214"], ["serial", "oiawjdwaiod"], ["status", "Operativo"], ["ubicacion", "214123"], ["ultima_calibracion", "2014-10-17"], ["updated_at", "2014-10-17 15:08:53.075800"]]
+  [1m[35m (58.9ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/equipos/1
+Completed 302 Found in 66ms (ActiveRecord: 59.9ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 108ms (Views: 105.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:38:53 -0430
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:39:37 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 38ms
+
+SyntaxError (/home/aganius/Desktop/SI_Inventario/app/views/equipos/show.html.erb:87: syntax error, unexpected keyword_ensure, expecting keyword_end
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/show.html.erb:89: syntax error, unexpected $end, expecting keyword_end):
+  app/views/equipos/show.html.erb:87: syntax error, unexpected keyword_ensure, expecting keyword_end
+  app/views/equipos/show.html.erb:89: syntax error, unexpected $end, expecting keyword_end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (12.5ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:39:44 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.6ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 80ms (Views: 74.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:39:45 -0430
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:50:57 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/home/aganius/Desktop/SI_Inventario/app/views/equipos/show.html.erb:41: syntax error, unexpected '<', expecting keyword_end
+  <% if @equipo.Investigacion 
+   ^
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/show.html.erb:41: syntax error, unexpected tIVAR, expecting keyword_end
+  <% if @equipo.Investigacion 
+               ^
+/home/aganius/Desktop/SI_Inventario/app/views/equipos/show.html.erb:89: syntax error, unexpected keyword_ensure, expecting $end):
+  app/views/equipos/show.html.erb:41: syntax error, unexpected '<', expecting keyword_end
+  app/views/equipos/show.html.erb:41: syntax error, unexpected tIVAR, expecting keyword_end
+  app/views/equipos/show.html.erb:89: syntax error, unexpected keyword_ensure, expecting $end
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (0.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.1ms)
+
+
+Started GET "/equipos/" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.4ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 99ms (Views: 95.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:54:32 -0430
+
+
+Started GET "/equipos/1/edit" for 127.0.0.1 at 2014-10-17 10:54:38 -0430
+Processing by EquiposController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/_form.html.erb (6.9ms)
+  Rendered equipos/edit.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 79ms (Views: 76.8ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/equipos/1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+Processing by EquiposController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"oiwadio", "marca"=>"", "modelo"=>"", "serial"=>"oiawjdwaiod", "no_bien_nac"=>"12", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"1", "responsable"=>"214", "ubicacion"=>"214123", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "commit"=>"Update Equipo", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mEquipo Exists (0.3ms)[0m  SELECT  1 AS one FROM "equipos"  WHERE ("equipos"."no_bien_nac" = 12 AND "equipos"."id" != 1) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/equipos/1
+Completed 302 Found in 6ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEquipo Load (0.1ms)[0m  [1mSELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:54:43 -0430
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEquipo Load (0.1ms)[0m  [1mSELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 103ms (Views: 100.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:04 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:56:05 -0430
+
+
+Started GET "/equipos/1/edit" for 127.0.0.1 at 2014-10-17 10:56:08 -0430
+Processing by EquiposController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEquipo Load (0.1ms)[0m  [1mSELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered equipos/_form.html.erb (6.0ms)
+  Rendered equipos/edit.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 97ms (Views: 95.4ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/equipos/1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+Processing by EquiposController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"oiwadio", "marca"=>"", "modelo"=>"", "serial"=>"oiawjdwaiod", "no_bien_nac"=>"12", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"1", "responsable"=>"214", "ubicacion"=>"214123", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "equipo_uso"=>["Docencia"], "commit"=>"Update Equipo", "id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mEquipo Load (0.2ms)[0m  [1mSELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mEquipo Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "equipos"  WHERE ("equipos"."no_bien_nac" = 12 AND "equipos"."id" != 1) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/equipos/1
+Completed 302 Found in 6ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.1ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 98ms (Views: 95.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:11 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:56:12 -0430
+
+
+Started GET "/equipos/1/edit" for 127.0.0.1 at 2014-10-17 10:56:15 -0430
+Processing by EquiposController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/_form.html.erb (6.5ms)
+  Rendered equipos/edit.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 99ms (Views: 96.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:56:19 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 92ms (Views: 90.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/equipos/new" for 127.0.0.1 at 2014-10-17 10:56:23 -0430
+Processing by EquiposController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered equipos/_form.html.erb (8.1ms)
+  Rendered equipos/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 113ms (Views: 111.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/equipos" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+Processing by EquiposController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"", "marca"=>"", "modelo"=>"wad", "serial"=>"", "no_bien_nac"=>"", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"1", "responsable"=>"", "ubicacion"=>"", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "equipo_uso"=>["Docencia"], "commit"=>"Create Equipo"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mEquipo Exists (0.3ms)[0m  SELECT  1 AS one FROM "equipos"  WHERE "equipos"."no_bien_nac" IS NULL LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mROLLBACK[0m
+  Rendered equipos/_form.html.erb (8.5ms)
+  Rendered equipos/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 106ms (Views: 99.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:56:28 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:56:29 -0430
+
+
+Started GET "/node/9" for 127.0.0.1 at 2014-10-17 10:56:34 -0430
+
+ActionController::RoutingError (No route matches [GET] "/node/9"):
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.1.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (27.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-10-17 10:58:21 -0430
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 257ms (Views: 208.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:58:22 -0430
+
+
+Started GET "/equipos" for 127.0.0.1 at 2014-10-17 10:58:24 -0430
+Processing by EquiposController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.4ms)[0m  SELECT "equipos".* FROM "equipos"
+  Rendered equipos/index.html.erb within layouts/application (18.6ms)
+Completed 200 OK in 113ms (Views: 107.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:58:26 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.4ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 114ms (Views: 109.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/equipos/1/edit" for 127.0.0.1 at 2014-10-17 10:58:28 -0430
+Processing by EquiposController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.3ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/_form.html.erb (85.6ms)
+  Rendered equipos/edit.html.erb within layouts/application (89.1ms)
+Completed 200 OK in 185ms (Views: 182.1ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/equipos/1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+Processing by EquiposController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"oiwadio", "marca"=>"", "modelo"=>"", "serial"=>"oiawjdwaiod", "no_bien_nac"=>"12", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"1", "Docencia"=>"1", "Extension"=>"0", "Gestion"=>"0", "responsable"=>"214", "ubicacion"=>"214123", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "commit"=>"Update Equipo", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mEquipo Exists (0.4ms)[0m  SELECT  1 AS one FROM "equipos"  WHERE ("equipos"."no_bien_nac" = 12 AND "equipos"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "equipos" SET "Docencia" = $1, "Extension" = $2, "Gestion" = $3, "updated_at" = $4 WHERE "equipos"."id" = 1[0m  [["Docencia", "t"], ["Extension", "f"], ["Gestion", "f"], ["updated_at", "2014-10-17 15:28:31.372420"]]
+  [1m[35m (47.5ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/equipos/1
+Completed 302 Found in 95ms (ActiveRecord: 48.7ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 102ms (Views: 100.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:58:31 -0430
+
+
+Started GET "/equipos/1/edit" for 127.0.0.1 at 2014-10-17 10:58:50 -0430
+Processing by EquiposController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/_form.html.erb (7.0ms)
+  Rendered equipos/edit.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 102ms (Views: 99.9ms | ActiveRecord: 0.6ms)
+
+
+Started PATCH "/equipos/1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+Processing by EquiposController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Pei/S+F5Ldmq6wfuaXvtJVGY/gAYtjveXTsRJcDUKlU=", "equipo"=>{"nombre"=>"oiwadio", "marca"=>"", "modelo"=>"", "serial"=>"oiawjdwaiod", "no_bien_nac"=>"12", "status"=>"Operativo", "ultima_calibracion(1i)"=>"2014", "ultima_calibracion(2i)"=>"10", "ultima_calibracion(3i)"=>"17", "Investigacion"=>"1", "Docencia"=>"1", "Extension"=>"0", "Gestion"=>"1", "responsable"=>"214", "ubicacion"=>"214123", "fecha_adquisicion(1i)"=>"2014", "fecha_adquisicion(2i)"=>"10", "fecha_adquisicion(3i)"=>"17", "orden_compra"=>"", "costo"=>"", "factura"=>""}, "commit"=>"Update Equipo", "id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.2ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mEquipo Exists (0.3ms)[0m  SELECT  1 AS one FROM "equipos"  WHERE ("equipos"."no_bien_nac" = 12 AND "equipos"."id" != 1) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "equipos" SET "Gestion" = $1, "updated_at" = $2 WHERE "equipos"."id" = 1[0m  [["Gestion", "t"], ["updated_at", "2014-10-17 15:28:54.039244"]]
+  [1m[35m (19.5ms)[0m  COMMIT
+Redirected to http://0.0.0.0:3000/equipos/1
+Completed 302 Found in 28ms (ActiveRecord: 20.8ms)
+
+
+Started GET "/equipos/1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+Processing by EquiposController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mEquipo Load (0.1ms)[0m  SELECT  "equipos".* FROM "equipos"  WHERE "equipos"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered equipos/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/consumibles.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/equipos.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/herramienta.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/instrumentos.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/sustancia_quimicas.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/usuarios.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/consumibles.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/equipos.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/external/jquery/jquery.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/herramienta.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/instrumentos.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/jquery-ui.min.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/sustancia_quimicas.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/usuarios.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/logo_drupal.jpg" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/innovar.gif" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/logo_ulab.gif" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/cat_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/stickers_jornadas.jpg" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/cons_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/doc_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/comit_ulab.jpg" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/facebook.gif" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/somosusb.gif" for 127.0.0.1 at 2014-10-17 10:58:54 -0430
+
+
+Started GET "/assets/cebolla_70_45.jpg" for 127.0.0.1 at 2014-10-17 10:58:54 -0430

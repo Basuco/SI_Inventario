@@ -15,6 +15,10 @@ class CreateEquipos < ActiveRecord::Migration
       t.string :orden_compra
       t.float :costo
       t.string :factura
+      t.boolean :Investigacion
+      t.boolean :Docencia
+      t.boolean :Extension
+      t.boolean :Gestion
 
       t.timestamps
     end

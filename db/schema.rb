@@ -44,6 +44,10 @@ ActiveRecord::Schema.define(version: 20141010042108) do
     t.string   "orden_compra"
     t.float    "costo"
     t.string   "factura"
+    t.boolean  "Investigacion"
+    t.boolean  "Docencia"
+    t.boolean  "Extension"
+    t.boolean  "Gestion"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
