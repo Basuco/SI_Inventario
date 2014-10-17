@@ -29,7 +29,11 @@
   </div>
   <div class="field">
     <%= f.label :regimen_legal %><br>
-    <%= f.select(:controlado, [['RL4'], ['RL7']] ) %>
+        <br>
+    <%= check_box_tag 'sustqui_regi[]', 'RL7' %>
+    <%= f.label :RL7 %><br>
+    <%= check_box_tag 'sustqui_regi[]', 'RL4' %>
+    <%= f.label :RL4 %><br>
   </div>
   <div class="field">
     <%= f.label :cantidad %><br>
@@ -41,11 +45,19 @@
   </div>
   <div class="field">
     <%= f.label :uso %><br>
-    <%= f.select(:uso, options_for_select(["Investigacion", "Docencia", "Extension", "Gestion"])) %>
+        <br>
+    <%= check_box_tag 'sustqui_uso[]', 'Investigacion' %>
+    <%= f.label :Investigacion %><br>
+    <%= check_box_tag 'sustqui_uso[]', 'Docencia' %>
+    <%= f.label :Docencia %><br>
+    <%= check_box_tag 'sustqui_uso[]', 'Extension' %>
+    <%= f.label :Extension %><br>
+    <%= check_box_tag 'sustqui_uso[]', 'Gestion' %>
+    <%= f.label :Gestion %><br>
   </div>
   <div class="field">
     <%= f.label :status %><br>
-    <%= f.select(:status, [['Buen estado'], ['Danado'] ] ) %>
+    <%= f.select(:status, [['Vigente'], ['Vencido'], ['Indeterminado']] ) %>
   </div>
   <div class="field">
     <%= f.label :responsable %><br>
@@ -61,7 +73,21 @@
   </div>
   <div class="field">
     <%= f.label :peligro %><br>
-    <%= f.text_field :peligro %>
+        <br>
+    <%= check_box_tag 'sustqui_peli[]', 'Toxico' %>
+    <%= f.label :Toxico %>
+    <%= check_box_tag 'sustqui_peli[]', 'Inflamable' %>
+    <%= f.label :Inflamable %><br>
+    <%= check_box_tag 'sustqui_peli[]', 'Comburente' %>
+    <%= f.label :Comburente %>
+    <%= check_box_tag 'sustqui_peli[]', 'Corrosivo' %>
+    <%= f.label :Corrosivo %><br>
+    <%= check_box_tag 'sustqui_peli[]', 'Explosivo' %>
+    <%= f.label :Explosivo %>
+    <%= check_box_tag 'sustqui_peli[]', 'Nocivo' %>
+    <%= f.label :Nocivo %><br>
+    <%= check_box_tag 'sustqui_peli[]', 'Irritante' %>
+    <%= f.label :Irritante %><br>
   </div>
   <div class="actions">
     <%= f.submit %>

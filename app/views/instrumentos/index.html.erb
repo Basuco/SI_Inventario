@@ -4,15 +4,15 @@
   <thead>
     <tr>
       <th>Nombre</th>
-      <th>Marca</th>
-      <th>Modelo</th>
-      <th>Unidad medida</th>
-      <th>Capacidad</th>
-      <th>Material</th>
-      <th>Uso</th>
-      <th>Estado</th>
+<!--      <th>Marca</th>         -->
+<!--      <th>Modelo</th>        -->
+<!--      <th>Unidad medida</th> -->
+<!--      <th>Capacidad</th>     -->
+<!--      <th>Material</th>      -->
+<!--      <th>Uso</th>           -->
+<!--      <th>Estado</th>        -->
       <th>Ubicacion</th>
-      <th>Ultima calibracion</th>
+<!--      <th>Ultima calibracion</th> -->
       <th>Responsable</th>
       <th>No bien nac</th>
       <th colspan="3"></th>
@@ -22,18 +22,18 @@
   <tbody>
     <% @instrumentos.each do |instrumento| %>
       <tr>
-        <td><%= instrumento.nombre %></td>
-        <td><%= instrumento.marca %></td>
-        <td><%= instrumento.modelo %></td>
-        <td><%= instrumento.unidad_medida %></td>
-        <td><%= instrumento.capacidad %></td>
-        <td><%= instrumento.material %></td>
-        <td><%= instrumento.uso %></td>
-        <td><%= instrumento.estado %></td>
-        <td><%= instrumento.ubicacion %></td>
-        <td><%= instrumento.ultima_calibracion %></td>
-        <td><%= instrumento.responsable %></td>
-        <td><%= instrumento.no_bien_nac %></td>
+        <td><pre><%= instrumento.nombre %></pre></td>
+<!--        <td><%= instrumento.marca %></td>     -->
+<!--        <td><%= instrumento.modelo %></td>    -->
+<!--        <td><%= instrumento.unidad_medida %></td>  -->
+<!--        <td><%= instrumento.capacidad %></td>      -->
+<!--        <td><%= instrumento.material %></td>       -->
+<!--        <td><%= instrumento.uso %></td>            -->
+<!--        <td><%= instrumento.estado %></td>         -->
+        <td><pre><%= instrumento.ubicacion %></pre></td>
+<!--        <td><%= instrumento.ultima_calibracion %></td>  -->
+        <td><pre><%= instrumento.responsable %></pre></td>
+        <td><pre><%= instrumento.no_bien_nac %></pre></td>
         <td><%= link_to 'Ver', instrumento %></td>
         <td><%= link_to 'Edit', edit_instrumento_path(instrumento) %></td>
         <td><%= link_to 'Elim', instrumento, method: :delete, data: { confirm: 'Estas seguro?' } %></td>

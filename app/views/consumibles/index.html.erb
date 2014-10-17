@@ -4,12 +4,12 @@
   <thead>
     <tr>
       <th>Nombre</th>
-      <th>Descripcion</th>
-      <th>Dimensiones</th>
-      <th>Material</th>
-      <th>Cantidad</th>
+<!--      <th>Descripcion</th> -->
+<!--      <th>Dimensiones</th> -->
+<!--      <th>Material</th>    -->
+      <th>Cantidad</th>  
       <th>Ubicacion</th>
-      <th>Uso</th>
+<!--      <th>Uso</th>      -->
       <th>Responsable</th>
       <th colspan="3"></th>
     </tr>
@@ -18,14 +18,14 @@
   <tbody>
     <% @consumibles.each do |consumible| %>
       <tr>
-        <td><%= consumible.nombre %></td>
-        <td><%= consumible.descripcion %></td>
-        <td><%= consumible.dimensiones %></td>
-        <td><%= consumible.material %></td>
-        <td><%= consumible.cantidad %></td>
-        <td><%= consumible.ubicacion %></td>
-        <td><%= consumible.uso %></td>
-        <td><%= consumible.responsable %></td>
+        <td><pre><%= consumible.nombre %></pre></td>
+<!--        <td><%= consumible.descripcion %></td>  -->
+<!--        <td><%= consumible.dimensiones %></td>  -->
+<!--        <td><%= consumible.material %></td>     -->
+        <td><pre><%= consumible.cantidad %></pre></td>    
+        <td><pre><%= consumible.ubicacion %></pre></td>
+<!--        <td><pre><%= consumible.uso %></pre></td> -->
+         <td><pre><%= consumible.responsable %></pre></td>
         <td><%= link_to 'Ver', consumible %></td>
         <td><%= link_to 'Edit', edit_consumible_path(consumible) %></td>
         <td><%= link_to 'Elim', consumible, method: :delete, data: { confirm: 'Estas seguro?' } %></td>
