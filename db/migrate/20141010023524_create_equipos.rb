@@ -8,7 +8,7 @@ class CreateEquipos < ActiveRecord::Migration
       t.integer :no_bien_nac
       t.string :status
       t.date :ultima_calibracion
-      t.string :uso
+      t.text :uso
       t.string :responsable
       t.string :ubicacion
       t.date :fecha_adquisicion

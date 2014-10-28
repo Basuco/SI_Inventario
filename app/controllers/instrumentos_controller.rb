@@ -62,6 +62,6 @@ class InstrumentosController < ApplicationController
     end
 
     def instrumento_params
-      params.require(:instrumento).permit(:nombre, :marca, :modelo, :unidad_medida, :capacidad, :material, :uso, :estado, :ubicacion, :ultima_calibracion, :responsable, :no_bien_nac)
+      params.require(:instrumento).permit(:nombre, :marca, :modelo, :unidad_medida, :capacidad, :material, :Investigacion, :Docencia, :Extension, :Gestion, :estado, :ubicacion, :ultima_calibracion, :responsable, :no_bien_nac)
     end
 end

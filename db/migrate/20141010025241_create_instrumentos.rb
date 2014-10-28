@@ -14,6 +14,11 @@ class CreateInstrumentos < ActiveRecord::Migration
       t.string :responsable
       t.integer :no_bien_nac
 
+      t.boolean :Investigacion
+      t.boolean :Docencia
+      t.boolean :Extension
+      t.boolean :Gestion
+
       t.timestamps
     end
   end

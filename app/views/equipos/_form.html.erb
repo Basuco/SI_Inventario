@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+
   <div class="field">
     <%= f.label :nombre %><br>
     <%= f.text_field :nombre %>
@@ -40,25 +41,46 @@
     <%= f.date_select :ultima_calibracion %>
   </div>
   <div class="field">
-    <%= f.label :uso %><br>
-    <br>
-    <%= f.check_box :Investigacion %>
-    <%= f.label :Investigacion %><br>
+    <%= f.label 'Uso' %><br>
+  <!--  <form>
+      <input type="checkbox" id="Investigacion">Investigacion<br>
+      <input type="checkbox" id="Docencia">Docencia<br>
+    </form> -->
+
+   <br>
+   <%= f.check_box :Investigacion %>
+    <%= 'Investigacion' %><br>
     <%= f.check_box :Docencia %>
     <%= f.label :Docencia %><br>
     <%= f.check_box :Extension %>
     <%= f.label :Extension %><br>
     <%= f.check_box :Gestion %>
     <%= f.label :Gestion %><br>
-  </div>
+   </div>
+
   <div class="field">
     <%= f.label :Calibrado %><br>
     <%= f.select(:Calibrado, [[''],['Si'], ['No'], ['Desconocido'] ] ) %>
+    </div>
+      <div class="field">
+        <%= f.label :responsable %><br>
+        <%= f.text_field :responsable %>
+
+
   </div>
-  <div class="field">
-    <%= f.label :responsable %><br>
-    <%= f.text_field :responsable %>
-  </div>
+
+<!--  <div>
+    <select name="cars" id="car_selector">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+    </select>
+    <p>&nbsp;</p>
+    <label class="hidden_option">Why would you DO that?</label>
+    <input type="text" name="reason" class="hidden_option" />
+  </div>-->
+
   <div class="field">
     <%= f.label :ubicacion %><br>
     <%= f.text_field :ubicacion %>

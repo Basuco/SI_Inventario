@@ -62,6 +62,6 @@ class HerramientaController < ApplicationController
     end
 
     def herramientum_params
-      params.require(:herramientum).permit(:nombre, :marca, :tipo, :no_bien_nac, :estado, :uso, :responsable, :ubicacion, :material, :factura, :de_un_juego)
+      params.require(:herramientum).permit(:nombre, :marca, :tipo, :no_bien_nac, :estado, :Investigacion, :Docencia, :Extension, :Gestion, :responsable, :ubicacion, :material, :factura, :de_un_juego)
     end
 end

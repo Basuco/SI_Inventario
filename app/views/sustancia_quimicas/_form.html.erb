@@ -30,10 +30,10 @@
   <div class="field">
     <%= f.label :regimen_legal %><br>
         <br>
-    <%= check_box_tag 'sustqui_regi[]', 'RL7' %>
-    <%= f.label :RL7 %><br>
-    <%= check_box_tag 'sustqui_regi[]', 'RL4' %>
-    <%= f.label :RL4 %><br>
+    <%= f.check_box :RI7 %>
+    <%= 'RI7' %><br>
+    <%= f.check_box :RI4 %>
+    <%= 'RI4' %><br>
   </div>
   <div class="field">
     <%= f.label :cantidad %><br>
@@ -43,18 +43,24 @@
     <%= f.label :CAS %><br>
     <%= f.text_field :CAS %>
   </div>
+
+
+
   <div class="field">
-    <%= f.label :uso %><br>
-        <br>
-    <%= check_box_tag 'sustqui_uso[]', 'Investigacion' %>
-    <%= f.label :Investigacion %><br>
-    <%= check_box_tag 'sustqui_uso[]', 'Docencia' %>
-    <%= f.label :Docencia %><br>
-    <%= check_box_tag 'sustqui_uso[]', 'Extension' %>
-    <%= f.label :Extension %><br>
-    <%= check_box_tag 'sustqui_uso[]', 'Gestion' %>
-    <%= f.label :Gestion %><br>
-  </div>
+    <%=  'Uso' %><br>
+   <br>
+   <%= f.check_box :Investigacion2 %>
+    <%= f.label :Investigacion2 %><br>
+    <%= f.check_box :Docencia2 %>
+    <%= f.label :Docencia2 %><br>
+    <%= f.check_box :Extension2 %>
+    <%= f.label :Extension2 %><br>
+    <%= f.check_box :Gestion2 %>
+    <%= f.label :Gestion2 %><br>
+   </div>
+
+
+
   <div class="field">
     <%= f.label :status %><br>
     <%= f.select(:status, [['Vigente'], ['Vencido'], ['Indeterminado']] ) %>
@@ -73,21 +79,24 @@
   </div>
   <div class="field">
     <%= f.label :peligro %><br>
-        <br>
-    <%= check_box_tag 'sustqui_peli[]', 'Toxico' %>
+    <br>
+    <%= f.check_box :Toxico %>
     <%= f.label :Toxico %>
-    <%= check_box_tag 'sustqui_peli[]', 'Inflamable' %>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <%= f.check_box :Inflamable %>
     <%= f.label :Inflamable %><br>
-    <%= check_box_tag 'sustqui_peli[]', 'Comburente' %>
+    <%= f.check_box :Comburente %>
     <%= f.label :Comburente %>
-    <%= check_box_tag 'sustqui_peli[]', 'Corrosivo' %>
+    <%= f.check_box :Corrosivo %>
     <%= f.label :Corrosivo %><br>
-    <%= check_box_tag 'sustqui_peli[]', 'Explosivo' %>
+    <%= f.check_box :Explosivo %>
     <%= f.label :Explosivo %>
-    <%= check_box_tag 'sustqui_peli[]', 'Nocivo' %>
+    &nbsp;&nbsp;&nbsp;
+    <%= f.check_box :Nocivo %>
     <%= f.label :Nocivo %><br>
-    <%= check_box_tag 'sustqui_peli[]', 'Irritante' %>
+    <%= f.check_box :Irritante %>
     <%= f.label :Irritante %><br>
+
   </div>
   <div class="actions">
     <%= f.submit %>

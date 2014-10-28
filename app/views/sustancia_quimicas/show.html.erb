@@ -22,7 +22,13 @@
 
 <p>
   <strong>Regimen legal:</strong>
-  <%= @sustancia_quimica.regimen_legal %>
+   <% if @sustancia_quimica.RI7 %>
+    <%= 'RI7' %>
+  <% end %>
+  <% if @sustancia_quimica.RI4 %>
+    <%= ' RI4' %>
+  <% end %>
+
 </p>
 
 <p>
@@ -37,7 +43,19 @@
 
 <p>
   <strong>Uso:</strong>
-  <%= @sustancia_quimica.uso %>
+
+  <% if @sustancia_quimica.Investigacion2 %>
+    <%= 'Inves' %>
+  <% end %>
+  <% if @sustancia_quimica.Docencia2 %>
+    <%= ' Doc' %>
+  <% end %>
+  <% if @sustancia_quimica.Extension2 %>
+    <%= ' Exten' %>
+  <% end %>
+  <% if @sustancia_quimica.Gestion2 %>
+    <%= ' Gest' %>
+  <% end %>
 </p>
 
 <p>
@@ -62,7 +80,27 @@
 
 <p>
   <strong>Peligro:</strong>
-  <%= @sustancia_quimica.peligro %>
+  <% if @sustancia_quimica.Toxico %>
+    <%= 'Toxico' %>
+  <% end %>
+  <% if @sustancia_quimica.Comburente %>
+    <%= ' Comburente' %>
+  <% end %>
+  <% if @sustancia_quimica.Explosivo %>
+    <%= ' Explosivo' %>
+  <% end %><br>
+  <% if @sustancia_quimica.Irritante %>
+    <%= ' Irritante' %>
+  <% end %>
+  <% if @sustancia_quimica.Inflamable %>
+    <%= 'Inflamable' %>
+  <% end %>
+  <% if @sustancia_quimica.Corrosivo %>
+    <%= ' Corrosivo' %>
+  <% end %>
+  <% if @sustancia_quimica.Nocivo %>
+    <%= ' Nocivo' %>
+  <% end %>
 </p>
 
 <%= link_to 'Edit', edit_sustancia_quimica_path(@sustancia_quimica) %> |

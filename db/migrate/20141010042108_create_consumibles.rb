@@ -10,6 +10,12 @@ class CreateConsumibles < ActiveRecord::Migration
       t.string :uso
       t.string :responsable
 
+      t.boolean :Investigacion
+      t.boolean :Docencia
+      t.boolean :Extension
+      t.boolean :Gestion
+
+
       t.timestamps
     end
   end

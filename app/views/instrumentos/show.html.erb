@@ -32,7 +32,18 @@
 
 <p>
   <strong>Uso:</strong>
-  <%= @instrumento.uso %>
+  <% if @instrumento.Investigacion %>
+    <%= 'Inves' %>
+  <% end %>
+  <% if @instrumento.Docencia %>
+    <%= ' Doc' %>
+  <% end %>
+  <% if @instrumento.Extension %>
+    <%= ' Exten' %>
+  <% end %>
+  <% if @instrumento.Gestion %>
+    <%= ' Gest' %>
+  <% end %>
 </p>
 
 <p>

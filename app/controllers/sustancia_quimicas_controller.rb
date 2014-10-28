@@ -50,7 +50,7 @@ class SustanciaQuimicasController < ApplicationController
   def destroy
 	  @sustancia_quimica.destroy
 	respond_to do |format|
-      format.html { redirect_to instrumentos_url, notice: 'Sustancia Quimica fue eliminado de forma exitosa.' }
+      format.html { redirect_to sustancia_quimicas_url notice: 'Sustancia Quimica fue eliminado de forma exitosa.' }
       format.json { head :no_content }
 	end
 #     @sustancia_quimica.destroy
@@ -63,6 +63,6 @@ class SustanciaQuimicasController < ApplicationController
     end
 
     def sustancia_quimica_params
-      params.require(:sustancia_quimica).permit(:nombre, :pureza, :estado_materia, :controlado, :regimen_legal, :cantidad, :CAS, :uso, :status, :responsable, :ubicacion, :caducidad, :peligro)
+      params.require(:sustancia_quimica).permit(:nombre, :pureza, :estado_materia, :controlado, :regimen_legal, :cantidad, :CAS, :uso, :status, :responsable, :ubicacion, :caducidad, :peligro, :Investigacion2, :Docencia2, :Extension2, :Gestion2, :Toxico, :Inflamable, :Comburente, :Corrosivo, :Explosivo, :Nocivo, :Irritante, :RI7, :RI4, :controlado)
     end
 end

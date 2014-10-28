@@ -27,7 +27,18 @@
 
 <p>
   <strong>Uso:</strong>
-  <%= @herramientum.uso %>
+  <% if @herramientum.Investigacion %>
+    <%= 'Inves' %>
+  <% end %>
+  <% if @herramientum.Docencia %>
+    <%= ' Doc' %>
+  <% end %>
+  <% if @herramientum.Extension %>
+    <%= ' Exten' %>
+  <% end %>
+  <% if @herramientum.Gestion %>
+    <%= ' Gest' %>
+  <% end %>
 </p>
 
 <p>

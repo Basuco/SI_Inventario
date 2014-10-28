@@ -60,6 +60,6 @@ class ConsumiblesController < ApplicationController
     end
 
     def consumible_params
-      params.require(:consumible).permit(:nombre, :descripcion, :dimensiones, :material, :cantidad, :ubicacion, :uso, :responsable)
+      params.require(:consumible).permit(:nombre, :descripcion, :dimensiones, :material, :cantidad, :ubicacion, :Investigacion, :Docencia, :Extension, :Gestion, :responsable)
     end
 end

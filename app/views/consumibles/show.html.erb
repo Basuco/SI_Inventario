@@ -32,7 +32,18 @@
 
 <p>
   <strong>Uso:</strong>
-  <%= @consumible.uso %>
+  <% if @consumible.Investigacion %>
+    <%= 'Inves' %>
+  <% end %>
+  <% if @consumible.Docencia %>
+    <%= ' Doc' %>
+  <% end %>
+  <% if @consumible.Extension %>
+    <%= ' Exten' %>
+  <% end %>
+  <% if @consumible.Gestion %>
+    <%= ' Gest' %>
+  <% end %>
 </p>
 
 <p>

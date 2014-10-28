@@ -36,9 +36,17 @@
     <%= f.text_field :material %>
   </div>
   <div class="field">
-    <%= f.label :uso %><br>
-    <%= f.select(:uso, options_for_select(["Investigacion", "Docencia", "Extension", "Gestion"])) %>
-  </div>
+    <%= f.label 'Uso' %><br>
+   <br>
+   <%= f.check_box :Investigacion %>
+    <%= f.label :Investigacion %><br>
+    <%= f.check_box :Docencia %>
+    <%= f.label :Docencia %><br>
+    <%= f.check_box :Extension %>
+    <%= f.label :Extension %><br>
+    <%= f.check_box :Gestion %>
+    <%= f.label :Gestion %><br>
+   </div>
   <div class="field">
     <%= f.label :estado %><br>
     <%= f.select(:estado, [['Buen estado'], ['Danado'], ['Reparacion'] ] ) %>

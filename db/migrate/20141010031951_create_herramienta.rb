@@ -13,6 +13,11 @@ class CreateHerramienta < ActiveRecord::Migration
       t.string :factura
       t.boolean :de_un_juego
 
+      t.boolean :Investigacion
+      t.boolean :Docencia
+      t.boolean :Extension
+      t.boolean :Gestion
+
       t.timestamps
     end
   end
